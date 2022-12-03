@@ -6,10 +6,45 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Links & Buttons</title>
   <style>
-    
+    body{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    a{
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover{
+      color: coral;
+    font-size: large;
+  font-weight: bold;
+  }
+  /* a:visited{
+    color: red;
+  } */
+
+  /* when click at the time of click it will affect or hold click it will affect */
+  a:active{
+    color: red;
+  }
+    /* Button styling */
+    .btn{
+      background:#4c6ca0;
+      color: white;
+      border: none;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover{
+      color: #f4f4f4;
+      background: #446110;
+    }
   </style>
 </head>
 <body>
-  
+  <br>
+  <a class= "btn"href="#"> Link</a><br><br>
+  <button class="btn">Button</button>
 </body>
 </html>
