@@ -6,10 +6,70 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Float & Align</title>
   <style>
-    
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container{
+      max-width: 960px;
+      margin: 30px auto;
+
+    }
+    /* it is used for the clearning the space if an element
+    is on the the other element so clr will use the both side */
+    .clr {
+      clear: both;
+    }
+    .box{
+      background-color: #f4f4f4;
+      border: 1px solid #333;
+      margin-bottom: 10px;
+      padding: 15px;
+    }
+    .box p{
+      /* text align property */
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+
+    }
+  
+    #box-2{
+      float: left;
+      width: 68%;
+       
+    }
+    #box-3{
+      float: right;
+      width: 30%;
+    }
   </style>
 </head>
 <body>
-  
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus provident sed dicta vitae perspiciatis dolorum exercitationem, asperiores ipsum quae quia.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet conseclendus.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet conseclendus.</p>
+    </div>
+    <!-- the box 4 is background of  box 3 and 4 so use clr class 
+    to be the below of the float items -->
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet conseclendus.</p>
+    </div>
+  </div>
 </body>
 </html>
