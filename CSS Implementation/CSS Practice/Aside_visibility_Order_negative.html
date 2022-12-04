@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Visibilty & More</title>
+    <style>
+        h1{
+            /* Removes the element from the browser as aslo it;s space */
+            /* display: none; */
+            
+            /*  this will just hide the content  but the space is there*/
+            /* visibility: hidden; */
+
+            /* if we want to use this color for our sections
+                use !IMPORTANT, that will be higher prioroty 
+            */
+            /* Important will give higher priority */
+            color: blue !important;
+        }
+        .hello  {
+            /* class has high priorty then the actual element  */
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="hello">Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit vel vero aspernatur ex minima error modi harum rem iusto quibusdam.</p>
+</body>
+</html>
